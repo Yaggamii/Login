@@ -1,0 +1,133 @@
+body{
+    background: url(img.jpg) no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 98vh;
+}
+
+.wrapper{
+    border: 2px solid #ffff;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 420px;
+    padding: 25px;
+}
+
+.wrapper h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #ffff;
+}
+
+.login-box .input-box{
+    height: 50px;
+    margin: 20px 0;
+}
+
+.input-box input{
+    width: 94%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 40px;
+    color: #ffff;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.input-box input::placeholder{
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.input-box i{
+    position: relative;
+    left: 90%;
+    bottom: 73%;
+    font-size: 20px;
+    color: #ffff;
+}
+
+.login-box .forgot{
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+.login-box .login-btn{
+    width: 90%;
+    padding: 10px;
+    margin: 10px 5%;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+}
+
+label{
+    font-weight: 600;
+    color: #ffff;
+}
+
+.forgot a{
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p, a{
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffff;
+}
+
+.forgot a:hover{
+    text-decoration: underline;
+}
+
+.register-link a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width:800px){
+
+    .wrapper{
+        
+        padding: 10px 30px 25px 25px;
+    }
+
+    .login-box .forgot{
+        display: flex;
+        gap: 13%;
+    }
+
+    .forgot a{
+        font-size: 18px;
+    }
+
+    .forgot label{
+        font-size: 18px;
+    }
+
+    
+
+    .login-box .login-btn{
+        padding: 15px 15px 13px;
+        margin-top: 20px;
+    }
+
+    .register-link p, a{
+        font-size: 20px;
+    }
+}
